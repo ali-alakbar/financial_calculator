@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Font Awsome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Main JS File -->
+    <script src="./js/script.js" defer></script>
+
+    <title>Financial Calculator</title>
+</head>
+<body>
+    <!-- =================== Start Calculate Section =================== -->
+
+
+    <section class="calculate">
+
+        <div class="container">
+            <div class="calc-reward">
+                <div class="special-heading">
+                    <h2 class="header">
+                        Calculate your Rewards
+                    </h2>
+                </div>
+                <form action="">
+                    <div class="inputSection">
+                        <div>
+                            <label for="vendor">Vendor/Bills</label>
+                            <input class="input input-one" name="vendor" type="number" placeholder="Enter a number">
+                        </div>
+                        <div>
+                            <label for="media">Media/Ad Spend</label>
+                            <input  class="input input-two" type="number" name="media" placeholder="Enter a number">
+                        </div>
+                        <div>
+                            <label for="corp">Corp. Spend</label>
+                            <input class="input input-three" type="number" name="corp" placeholder="Enter a number">
+                        </div>
+                        <div>
+                            <label for="team">Team Project</label>
+                            <input class="input input-four" type="number" name="team" placeholder="Enter a number">
+                        </div>
+                    </div>
+
+                    <div class="compare-rewards">
+                        <div class="special-heading">
+                            <h3 class="header">
+                                Compare your Rewards
+                            </h3>
+                        </div>
+                        <div class="myBtns">
+                            <button type="button" class="btn-brex"> Brex </button>
+                            <button type="button" class="btn-stripe"> Stripe </button>
+                            <button type="button" class="btn-amex"> Amex </button>
+                        </div>
+                    
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <!-- =================== End Calculate Section =================== -->
+
+    <!-- =================== Start Result Section =================== -->
+
+    <section class="result">
+        <div class="container">
+            <div class="left-side">
+                <div class="img-container">
+                    <img src="./imgs/credit-card-png-23522.png" alt="">
+                </div>
+                <div class="label-content">
+                    <p class="label">Loading...</p>
+                    <p class="unlimited">Loading...</p>
+                    <p class="lifetime">Loading...</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <div><span class="bar result-bar"></span><span class="myResult"></span> </div>
+                <div><span class="bar unlimited-bar"></span><span class="unlimitedResult"></span> </div>
+                <div><span class="bar lifetime-bar"></span><span class="lifetimeResult"></span> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== End Result Section =================== -->
+
+</body>
+</html>

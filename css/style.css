@@ -1,0 +1,267 @@
+/* =================== Start Global Rules =================== */
+* {
+  padding: 0%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Start Screen Responsive */
+/* Small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* End Screen Responsive */
+/* =================== End Global Rules =================== */
+/* =================== Start Calculate Section =================== */
+.calculate {
+  margin: 3.5rem 0;
+}
+
+.calculate .container {
+  text-align: center;
+}
+
+.calculate .container .special-heading {
+  margin-bottom: 2rem;
+}
+
+.calculate .container .special-heading .header {
+  color: #765cbf;
+}
+
+.calculate .container .calc-reward {
+  margin-bottom: 3rem;
+}
+
+.calculate .container .calc-reward .inputSection {
+  display: inline-block;
+}
+
+.calculate .container .calc-reward .inputSection div {
+  margin-bottom: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.calculate .container .calc-reward .inputSection div label {
+  color: #777;
+  font-weight: 600;
+}
+
+.calculate .container .calc-reward .inputSection div input {
+  border: solid 1px #5f5f5f;
+  text-align: center;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.calculate .container .compare-rewards .myBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.calculate .container .compare-rewards .myBtns button {
+  width: 120px;
+  height: 40px;
+  background: #fff;
+  color: #5f5f5f;
+  border: solid 1px #5f5f5f5c;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: italic;
+  -webkit-box-shadow: 4px 4px 15px -8px #000;
+          box-shadow: 4px 4px 15px -8px #000;
+}
+
+/* Medium  */
+@media (max-width: 768px) {
+  .calculate .calc-reward .inputSection div {
+    gap: 0px !important;
+  }
+  .calculate .calc-reward .inputSection div label {
+    text-align: initial;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .calculate .calc-reward .inputSection div input {
+    font-size: 13px;
+    padding: 7px 2px;
+  }
+  .calculate .compare-rewards .myBtns {
+    gap: 15px;
+  }
+  .calculate .compare-rewards .myBtns button {
+    width: 100px;
+  }
+}
+
+/* =================== End Calculate Section =================== */
+.result {
+  display: none;
+}
+
+.result .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.result .container .left-side {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+.result .container .left-side .img-container {
+  width: 35%;
+}
+
+.result .container .left-side .img-container img {
+  width: 100%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.result .container .left-side .label-content p {
+  text-align: end;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.result .container .left-side .label-content .box {
+  display: none;
+}
+
+.result .container .left-side .label-content .stripe {
+  display: block;
+}
+
+.result .container .left-side .label-content .lifetime {
+  color: #777;
+  font-weight: 600;
+}
+
+.result .container .right-side::before {
+  content: "";
+  height: 155px;
+  position: absolute;
+  width: 15px;
+  -webkit-box-shadow: 28px 0px 13px -30px inset;
+          box-shadow: 28px 0px 13px -30px inset;
+}
+
+.result .container .right-side div {
+  margin-bottom: 2rem;
+}
+
+.result .container .right-side div .bar {
+  display: inline-block;
+  background: #2196f3;
+  height: 15px;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 2rem;
+}
+
+.result .container .right-side div .result-bar {
+  width: 100px;
+  opacity: 0.5;
+}
+
+.result .container .right-side div .unlimited-bar {
+  width: 150px;
+  opacity: 0.5;
+}
+
+.result .container .right-side div .lifetime-bar {
+  width: 260px;
+}
+
+.active {
+  display: block !important;
+}
+
+/* Medium  */
+@media (max-width: 768px) {
+  .result .container .left-side {
+    width: initial;
+    margin-right: 2rem;
+  }
+  .result .container .left-side .img-container {
+    display: none;
+  }
+  .result .container .left-side .label-content p {
+    font-size: 13px;
+  }
+  .result .container .right-side div {
+    margin-bottom: 2rem;
+  }
+  .result .container .right-side div .bar {
+    margin-right: 0.5rem;
+  }
+  .result .container .right-side div .result-bar {
+    width: 60px;
+  }
+  .result .container .right-side div .unlimited-bar {
+    width: 80px;
+  }
+  .result .container .right-side div .lifetime-bar {
+    width: 140px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
